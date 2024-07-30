@@ -1,0 +1,96 @@
+.user{
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: #12002b;
+        min-height: calc(100vh - 151px);
+        .header{
+            color: #fff;
+            margin-bottom: 2rem;
+            #editing{
+                *{border-radius: 5px;}
+                div{
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    margin-bottom: 10px;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        color: red;
+                    }
+                }
+                input{
+                    &::placeholder{
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.702);
+                    }
+                    min-width: 210px;
+                    min-height: 15px;
+                    padding: 5px;
+                }
+                button{
+                    min-width: 90px;
+                    background-color: white;
+                    color:#695DF5;
+                    border-color: #6a5df59f;
+                }
+            }
+            button{
+                border-color: #00bc77;
+                background-color: #00bc77;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px;
+            }
+        }
+        .account{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            background-color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 0px;
+            flex-direction: row;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            text-align: left;
+            margin-bottom: 2rem;
+            .account-content-wrapper{
+                width: 100%;
+                flex: 1;
+                .account-title{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+                .account-amount{
+                    margin: 0;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                }
+                .account-amount-description{
+                    margin: 0;
+                }
+            }
+            .cta{
+                flex: 0;
+                button{
+                    display: block;
+                    width: 200px;
+                    padding: 8px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    margin-top: 1rem;
+                    border-color: #00bc77;
+                    background-color: #00bc77;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}

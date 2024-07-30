@@ -1,0 +1,33 @@
+.home main{
+    .content1{
+        height: 400px;
+        background-position: 0% 33%;
+        background-image: url('../../public/img/bank-tree.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .text-box{
+            position: absolute;
+            text-align: left;
+            background-color: white;
+            top: 50px;
+            right: 50px;
+            width: 300px;
+            margin: 2rem;
+            padding: 2rem;
+            .subtitle{
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #2c3e50;
+                margin: 0;
+            }.text{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .content2{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
