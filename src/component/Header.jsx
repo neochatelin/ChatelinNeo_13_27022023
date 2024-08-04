@@ -11,7 +11,7 @@ function Herder() {
 
     const diconectButton = ()=>{
         dispatch(disconect())
-        navigate("/sign-in")
+        navigate("/login")
     }
 
     const displayButton = ()=>{
@@ -21,7 +21,7 @@ function Herder() {
             }else{
                 return (
                 <>
-                    <button onClick={()=>navigate("/user")}>
+                    <button onClick={()=>navigate("/profile")}>
                         <i className="fa fa-user-circle" aria-hidden="true"></i>
                         <p> {user.info.firstName}</p>
                     </button>
@@ -35,7 +35,7 @@ function Herder() {
         }else{
             return (
                 <>
-                    <button onClick={()=>navigate("/sign-in")}>
+                    <button onClick={()=>navigate("/login")}>
                         <i className="fa fa-user-circle" aria-hidden="true"></i>
                         <p> Sign In</p>
                     </button>

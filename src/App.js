@@ -27,8 +27,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/sign-in' element={<SignIn/>}/>
-        <Route path='/user' element={<PrivateRoute component={User} />}/>
+        <Route path='/login' element={<SignIn/>}/>
+        <Route path='/profile' element={<PrivateRoute component={User} />}/>
       </Routes>
     </div>
   );

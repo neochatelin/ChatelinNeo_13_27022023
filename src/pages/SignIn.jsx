@@ -50,7 +50,7 @@ function SignIn() {
 
     useEffect(()=>{
         if(status === "succeeded"){
-            navigate('/user')
+            navigate('/profile')
         }else if(status === "failed"){
             errorConnection.current.innerText = "reeseyer plus tard";
         }else if(status === 400){
